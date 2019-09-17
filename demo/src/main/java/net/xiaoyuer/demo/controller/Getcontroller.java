@@ -12,4 +12,9 @@ public class Getcontroller {
     public String get_index(String str) {
         return str;
     }
+    @RequestMapping(value = "/index")
+    @ResponseBody
+    public String index(){
+        return "hello MacOs";
+    }
 }
