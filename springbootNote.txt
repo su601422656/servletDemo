@@ -1,0 +1,19 @@
+@RequstMapping(value = "/*****")
+@Controller
+@RestController
+@ResponseBody
+@GetMapping
+@PostMapping
+@SpringBootApplication:
+	@SpringBootConfiguration@EnableAutoConfiguration@ComponentScan
+@PathVariable
+@RequsetParam
+@RequsetHeader
+HttpServletRequest 
+@DeleteMapping
+@PutMapping
+@JsonIgnore
+@JsonFormat(pattern="yyyy-MM-dd hh:mm:ss",locale="zh",timezone="GMT+8")
+@JsonProperty
+@JsonInclude
+@MultipartFile.transferTo()
