@@ -36,9 +36,12 @@ public class Testcontroller {
     @RequestMapping(value = "/upload")
     @ResponseBody
     public Object upload(@RequestParam(name="head_img") MultipartFile file, HttpServletRequest request){
-        File newfile = new File("C:/Users/jokeep/Desktop/Repositoies/8yue.xls");
+        String fileName =file.getOriginalFilename();
+        //      File file4Windows = new File("C:/Users/jokeep/Desktop/Repositoies/8yue.xls"+fileName);
+        File file4Mac = new File("/Users/suyafei/Repositoies/springboot_learning/"+fileName);
         try {
-            file.transferTo(newfile);
+            file.transferTo(file4Mac);
+//          file.transferTo(file4Windows);
             return "吃皮";
         } catch (Exception e) {
             e.printStackTrace();
