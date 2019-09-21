@@ -1,6 +1,4 @@
 package net.xiaoyuer.demo;
-
-import jdk.internal.jline.internal.TestAccessible;
 import junit.framework.TestCase;
 import org.junit.After;
 import org.junit.Before;
